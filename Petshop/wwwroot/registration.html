@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/registration.js"></script>
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <form class="form-horizontal">
+            <fieldset>
+
+                <legend class="">Регистрация</legend>
+                <div class="control-group">
+                    <!-- E-mail -->
+                    <label class="control-label" for="email">Почта</label>
+                    <div class="controls">
+                        <input type="text" id="email" placeholder="" class="input-xlarge">
+                        <p class="help-block">Укажите почту</p>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <!-- Password-->
+                    <label class="control-label" for="password">Пароль</label>
+                    <div class="controls">
+                        <input type="password" id="password" placeholder="" class="input-xlarge">
+                        <p class="help-block">
+                            <ul>
+                                <li class="help-block">Пароль должен содержать минимум 6 символов</li>
+                                <li class="help-block">Пароль должен содержать минимум 1 цифру</li>
+                                <li class="help-block">Пароль должен содержать минимум 1 строчную букву</li>
+                                <li class="help-block">Пароль должен содержать минимум 1 прописную букву</li>
+                                <li class="help-block">Пароль должен содержать минимум 1 не буквенно-цифровой символ</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <!-- Password -->
+                    <label class="control-label" for="password_confirm">Повторите пароль</label>
+                    <div class="controls">
+                        <input type="password" id="password_confirm" placeholder="" class="input-xlarge">
+                        <p class="help-block">Повторите пароль</p>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <div>
+            <button class="btn-success" onclick="registration()">Зарегистрировать</button>
+        </div>
+        <div class="col-12" id="errors">
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
